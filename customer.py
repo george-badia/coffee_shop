@@ -26,3 +26,13 @@ class Customer:
         coffee.add_order(order)  
         self.order_list.append(order)
         return order
+# getting a list of orders placed by the customer,and returning a list of Order objects
+    def orders(self):
+        return self.order_list
+
+# getting a list of coffee types ordered by the customer and also return a list of Coffee 
+    def coffees(self):
+         
+        return [order.coffee for order in self.order_list]
+
+ 
