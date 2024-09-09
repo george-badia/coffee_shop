@@ -12,3 +12,17 @@ class Customer:
         # this will to store customer's orders and add the customer to the list of all customers
         self.order_list = []  
         Customer.customers.append(self) 
+
+ # Create an order for the customer with the given coffee and price.
+    def create_order(self, coffee, price):
+       
+        # Parameters:
+        # - coffee: Coffee object is representing the type of coffee in the order
+        # - price: which has to be float representing the price of the order
+       
+       #The created order which is retuned back
+        order = Order(self, coffee, price)
+        # Add the order to the coffee's list of orders
+        coffee.add_order(order)  
+        self.order_list.append(order)
+        return order
