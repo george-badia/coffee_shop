@@ -35,4 +35,25 @@ class Customer:
          
         return [order.coffee for order in self.order_list]
 
- 
+# Find the customer who spent the most on a specific coffee.
+    @staticmethod
+    def most_aficionado(coffee):
+       
+        # while passing Parameters as :
+        # - coffee: which is an object to find the aficionado for the customer who spent the most on the specified coffee ,keeping in mind max value which is an initial comparison point to find the maximum price among orders for a specific coffee by customers
+        max_price = float('-inf')
+        aficionado = None
+        for customer in Customer.customers:
+            for order in customer.order_list:
+                if order.coffee == coffee and order.price > max_price:
+                    max_price = order.price
+                    aficionado = customer
+        return aficionado
+
+# Initialize an Order instance with a customer, coffee, and price.while passin customers who placed their orders ,coffee types being offered and price in float (objects)as parameters
+class Order:
+    def __init__(self, customer, coffee, price):
+        
+        self.customer = customer
+        self.coffee = coffee
+        self.price = price 
