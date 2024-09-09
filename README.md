@@ -65,6 +65,10 @@ The Coffee Shop Domain Modeling project models a basic domain for a coffee shop,
    ```bash
    $ pytest
    ```
+4. Run the script :If you're using Python 3 and the default python command refers to Python 2, you may need to use:
+   ```bash
+   $ python3 debug.py
+   ```
 
 ## Technologies Used
 
