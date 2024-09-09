@@ -50,7 +50,7 @@ class Customer:
                     aficionado = customer
         return aficionado
 
-# Initialize an Order instance with a customer, coffee, and price.while passin customers who placed their orders ,coffee types being offered and price in float (objects)as parameters
+# Initialize an Order instance with a customer, coffee, and price.
 class Order:
     def __init__(self, customer, coffee, price):
         
