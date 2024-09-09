@@ -10,9 +10,9 @@ This project was created and is the sole property of George Badia.
 
 The Coffee Shop Domain Modeling project models a basic domain for a coffee shop, with three primary classes:
 
-**Customer**: Represents a customer who can place orders.
-**Coffee**: Represents different types of coffee available at the shop.
-**Order**: Represents an order made by a customer for a particular coffee.
+- **Customer**: Represents a customer who can place orders.
+- **Coffee**: Represents different types of coffee available at the shop.
+- **Order**: Represents an order made by a customer for a particular coffee.
 
 ### This project also simulates the relationships between these entities:
 
